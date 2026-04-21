@@ -2,8 +2,8 @@
 
 const projectsData = [
   {
-    title: "Japan Travel Itinerary Planner",
-    description: "An interactive trip planner designed to map out routes between anime landmarks, automotive culture hotspots, and a hiking schedule for Mount Fuji.",
+    title: "Travel Itinerary Planner",
+    description: "A customizable itinerary tracker and my first full front-end project! Built specifically to learn the fundamentals of HTML, CSS, and state-driven vanilla JavaScript. Includes backend systems, AI/API integration.",
     technologies: ["JavaScript", "HTML/CSS", "Mapping Data", "AI Integration", "S.P.A."],
     link: "https://github.com/Oapatel2303/travel-planner",
     liveLink: "https://opaz-travelplanner.netlify.app/"
@@ -12,7 +12,7 @@ const projectsData = [
     title: "Future Project",
     description: "Information about another project will go right here once it's ready to be showcased.",
     technologies: ["Vanilla JS"],
-    link: "https://github.com/yourusername/repo"
+    link: "https://github.com/Oapatel2303"
   }
 ];
 
