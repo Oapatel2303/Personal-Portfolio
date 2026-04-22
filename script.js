@@ -28,6 +28,21 @@ const hobbiesData = [
   "Automotive Culture & Motorcycles (checking out auto expos)"
 ];
 
+const skillsData = [
+  { 
+    category: "Languages", 
+    items: ["Java", "JavaScript", "C++", "HTML/CSS", "Lua"] 
+  },
+  { 
+    category: "Tools & Technologies", 
+    items: ["Git/GitHub", "DOM Manipulation", "REST APIs", "Markdown"] 
+  },
+  { 
+    category: "Concepts", 
+    items: ["Data Structures", "Algorithms", "Object-Oriented Programming", "Version Control"] 
+  }
+];
+
 // --- Rendering Functions --- //
 
 function renderProjects() {
@@ -62,6 +77,26 @@ function renderList(dataArray, containerId) {
     const li = document.createElement('li');
     li.textContent = item;
     container.appendChild(li);
+  });
+}
+
+function renderSkills() {
+  const container = document.getElementById('skills-container');
+  
+  skillsData.forEach(skillGroup => {
+    const groupDiv = document.createElement('div');
+    groupDiv.className = 'skill-group';
+    
+    const tagsHTML = skillGroup.items.map(item => `<span class="skill-tag">${item}</span>`).join('');
+    
+    groupDiv.innerHTML = `
+      <h3>${skillGroup.category}</h3>
+      <div class="skill-tags">
+        ${tagsHTML}
+      </div>
+    `;
+    
+    container.appendChild(groupDiv);
   });
 }
 
@@ -102,9 +137,11 @@ window.addEventListener('scroll', () => {
   scrollTracker.style.height = `${scrollPercentage}%`; 
 });
 
+
 // --- Initialize --- //
 
 document.addEventListener('DOMContentLoaded', () => {
+  renderSkills(); // <-- Add this line
   renderProjects();
   renderList(booksData, 'books-container');
   renderList(hobbiesData, 'hobbies-container');
