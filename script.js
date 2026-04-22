@@ -141,8 +141,8 @@ window.addEventListener('scroll', () => {
 // --- Initialize --- //
 
 document.addEventListener('DOMContentLoaded', () => {
-  renderSkills(); // <-- Add this line
   renderProjects();
+  renderSkills();
   renderList(booksData, 'books-container');
   renderList(hobbiesData, 'hobbies-container');
 });
