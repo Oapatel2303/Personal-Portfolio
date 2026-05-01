@@ -8,6 +8,15 @@ const projectsData = [
     link: "https://github.com/Oapatel2303/travel-planner",
     liveLink: "https://opaz-travelplanner.netlify.app/"
   },
+
+  {
+    title: "Seasons EMS Employee Portal",
+    description: "A custom full-stack department dashboard managing standard operating procedures, personnel, and automated announcements.",
+    technologies: ["Firebase", "PostgreSQL", "Discord Webhooks", "JavaScript"],
+    link: "https://github.com/Oapatel2303/Ems-Site", 
+    liveLink: "https://seasons-rp-ems.web.app/"
+  },
+
   {
     title: "Future Project",
     description: "Information about another project will go right here once it's ready to be showcased.",
@@ -31,15 +40,15 @@ const hobbiesData = [
 const skillsData = [
   { 
     category: "Languages", 
-    items: ["Java", "JavaScript", "C++", "HTML/CSS", "Lua"] 
+    items: ["Java", "JavaScript", "C++", "HTML/CSS", "SQL", "Lua"] 
   },
   { 
     category: "Tools & Technologies", 
-    items: ["Git/GitHub", "DOM Manipulation", "REST APIs", "Markdown"] 
+    items: ["Git/GitHub", "PostgreSQL", "Firebase", "REST APIs", "DOM Manipulation"] 
   },
   { 
     category: "Concepts", 
-    items: ["Data Structures", "Algorithms", "Object-Oriented Programming", "Version Control"] 
+    items: ["Data Structures", "Algorithms", "Object-Oriented Programming", "Full-Stack Development", "Version Control"] 
   }
 ];
 
